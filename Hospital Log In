@@ -1,0 +1,18 @@
+# Simple Hospital Login System
+
+# Predefined users (you can add more)
+users = {
+    "doctor1": "pass123",
+    "nurse2": "nurse456",
+    "admin": "admin789"
+}
+
+print("🏥 Welcome to Hospital Management System Login 🏥")
+username = input("Enter your username: ")
+password = input("Enter your password: ")
+
+if username in users and users[username] == password:
+    print(f"\n✅ Login successful! Welcome, {username}.\n")
+    print("You now have access to the hospital system dashboard...")
+else:
+    print("\n❌ Login failed! Invalid username or password.\n")
